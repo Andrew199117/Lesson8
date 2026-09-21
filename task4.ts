@@ -1,6 +1,9 @@
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // Написать функцию, которая поменяет переменные местами, не создавая дополнительную переменную
 
-let num1 = 5;
-let num2 = 7;
+const num = [5, 7];
+
+function replaceNumbers(num: number[]) {
+  [num[0], num[1]] = [num[1]!, num[0]!];
+  return num;
+}
+console.log(replaceNumbers(num));
